@@ -1,6 +1,5 @@
 import { dirname, isAbsolute, join, relative, resolve } from 'node:path';
 
-import { createDebugLogger } from 'rejoinder';
 import { type Tagged } from 'type-fest';
 
 /**
@@ -100,12 +99,8 @@ export function toRelativePath(...args: string[]) {
  *
  * @see {@link resolve}
  */
-export function toPath(
-  ...paths: [AbsolutePath, ...(string | Path)[]]
-): AbsolutePath;
-export function toPath(
-  ...paths: [RelativePath, ...(string | Path)[]]
-): RelativePath;
+export function toPath(...paths: [AbsolutePath, ...(string | Path)[]]): AbsolutePath;
+export function toPath(...paths: [RelativePath, ...(string | Path)[]]): RelativePath;
 export function toPath(...paths: (string | Path)[]): Path;
 export function toPath(...paths: string[]) {
   return join(...paths);
