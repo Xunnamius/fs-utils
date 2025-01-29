@@ -107,14 +107,14 @@ export function toPath(...paths: string[]) {
 }
 
 /**
- * This function returns the path to `path`'s parent directory.
+ * This function returns the {@link AbsolutePath} to `path`'s parent directory.
  *
  * @see {@link dirname}
  */
 export function toDirname(path: AbsolutePath): AbsolutePath;
 /**
- * This function returns the path to `path`'s parent directory. `"."` is returned
- * if no non-root parent is derivable.
+ * This function returns the {@link RelativePath} to `path`'s parent directory.
+ * `"."` is returned if no non-root parent is derivable.
  *
  * @see {@link dirname}
  */
