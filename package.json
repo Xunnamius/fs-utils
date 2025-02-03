@@ -69,7 +69,7 @@
     "type-fest": "^4.33.0"
   },
   "devDependencies": {
-    "@-xun/symbiote": "^2.18.4",
+    "@-xun/symbiote": "^2.18.5",
     "rejoinder": "^1.2.4"
   },
   "engines": {
