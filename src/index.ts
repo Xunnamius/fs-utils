@@ -1,6 +1,6 @@
 import { dirname, isAbsolute, join, relative, resolve } from 'node:path';
 
-import { type Tagged } from 'type-fest';
+import type { Tagged } from 'type-fest';
 
 /**
  * This type represents an absolute filesystem path. An absolute path is a
@@ -78,7 +78,7 @@ export function toRelativePath(from: string, to: string): RelativePath;
  */
 export function toRelativePath(to: string): RelativePath;
 export function toRelativePath(...args: string[]) {
-  const [from, to] = args.length > 1 ? args : [undefined, args[0]];
+  const [from, to] = args.length > 1 ? args : [undefined, args[0]!];
 
   if (from === undefined && (!to || isRelativePath(to))) {
     return to;

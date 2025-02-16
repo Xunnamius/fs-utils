@@ -9,10 +9,10 @@ import {
   toAbsolutePath,
   toDirname,
   toPath,
-  toRelativePath,
-  type AbsolutePath,
-  type RelativePath
+  toRelativePath
 } from 'universe';
+
+import type { AbsolutePath, RelativePath } from 'universe';
 
 const cwd = getCurrentWorkingDirectory();
 
