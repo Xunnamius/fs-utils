@@ -6,4 +6,31 @@
 // * containers, and are built to run in GitHub Actions CI pipelines; some can
 // * also be run locally.
 
+import { createDebugLogger } from 'rejoinder';
+
+import { exports as packageExports, name as packageName } from 'rootverse:package.json';
+
+import {
+  ensurePackageHasBeenBuilt,
+  reconfigureJestGlobalsToSkipTestsInThisFileIfRequested
+} from 'testverse:util.ts';
+
+import { toAbsolutePath, toDirname } from '@-xun/fs';
+
+const TEST_IDENTIFIER = `${packageName.split('/').at(-1)!}-e2e`;
+const debug = createDebugLogger({ namespace: 'fs' }).extend(TEST_IDENTIFIER);
+const nodeVersion = process.env.XPIPE_MATRIX_NODE_VERSION || process.version;
+
+debug(`nodeVersion: "${nodeVersion}" (process.version=${process.version})`);
+
+reconfigureJestGlobalsToSkipTestsInThisFileIfRequested({ it: true, test: true });
+
+beforeAll(async () => {
+  await ensurePackageHasBeenBuilt(
+    toDirname(toAbsolutePath(require.resolve('rootverse:package.json'))),
+    packageName,
+    packageExports
+  );
+});
+
 test.todo('this');
