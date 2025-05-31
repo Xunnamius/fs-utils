@@ -8,7 +8,7 @@
 
 > **getInitialWorkingDirectory**(): [`AbsolutePath`](../type-aliases/AbsolutePath.md)
 
-Defined in: [src/index.ts:193](https://github.com/Xunnamius/fs-utils/blob/31e13bfb0e388ce1c2e51e4c2a50e9638e833b81/src/index.ts#L193)
+Defined in: [src/index.ts:193](https://github.com/Xunnamius/fs-utils/blob/90c99b3d2da63f3141e91ac832d403aba1f7cec4/src/index.ts#L193)
 
 This function returns the **initial working directory**. This is the value of
 `process.cwd()` _before any NPM or NPM-like tooling changed the working

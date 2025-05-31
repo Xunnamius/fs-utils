@@ -10,7 +10,7 @@
 
 > **toPath**(...`paths`): [`AbsolutePath`](../type-aliases/AbsolutePath.md)
 
-Defined in: [src/index.ts:102](https://github.com/Xunnamius/fs-utils/blob/31e13bfb0e388ce1c2e51e4c2a50e9638e833b81/src/index.ts#L102)
+Defined in: [src/index.ts:102](https://github.com/Xunnamius/fs-utils/blob/90c99b3d2da63f3141e91ac832d403aba1f7cec4/src/index.ts#L102)
 
 This function joins all arguments together and normalizes the resulting path.
 
@@ -39,7 +39,7 @@ resolve
 
 > **toPath**(...`paths`): [`RelativePath`](../type-aliases/RelativePath.md)
 
-Defined in: [src/index.ts:103](https://github.com/Xunnamius/fs-utils/blob/31e13bfb0e388ce1c2e51e4c2a50e9638e833b81/src/index.ts#L103)
+Defined in: [src/index.ts:103](https://github.com/Xunnamius/fs-utils/blob/90c99b3d2da63f3141e91ac832d403aba1f7cec4/src/index.ts#L103)
 
 This function joins all arguments together and normalizes the resulting path.
 
@@ -68,7 +68,7 @@ resolve
 
 > **toPath**(...`paths`): [`Path`](../type-aliases/Path.md)
 
-Defined in: [src/index.ts:104](https://github.com/Xunnamius/fs-utils/blob/31e13bfb0e388ce1c2e51e4c2a50e9638e833b81/src/index.ts#L104)
+Defined in: [src/index.ts:104](https://github.com/Xunnamius/fs-utils/blob/90c99b3d2da63f3141e91ac832d403aba1f7cec4/src/index.ts#L104)
 
 This function joins all arguments together and normalizes the resulting path.
 
